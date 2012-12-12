@@ -1,8 +1,8 @@
 <?php
 $Shortcut = "[InternetShortcut]
-URL=http://192.168.1.127/
+URL=http://hao.admaster.co/
 IDList=
-IconFile=http://192.168.1.127/favicon.ico
+IconFile=http://hao.admaster.co/favicon.ico
 IconIndex=1
 [{000214A0-0000-0000-C000-000000000046}]
 Prop3=19,2";
