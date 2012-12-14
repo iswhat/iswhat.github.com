@@ -113,8 +113,8 @@ h6 {
 
 .box-small-link {
 	border: 1px solid #ddd;
-	margin-bottom: -1px;
-  	padding: 18px 0px;
+	margin-bottom: -2px;
+  	padding: 13px 0px;
 	font-size: 18px;
   	background-color: #fafafa;
   	background-image: -moz-linear-gradient(top, #fafafa, #efefef);
@@ -136,8 +136,8 @@ h6 {
 
 .box-small-link:hover {
 	border: 1px solid #3c4049;
-	margin-bottom: -1px;
-  	padding: 18px 0px;
+	margin-bottom: -2px;
+  	padding: 13px 0px;
   	color: #fff;
   	background-color: #4e525d;
   	background-image: -moz-linear-gradient(top, #4e525d, #3c4049);
