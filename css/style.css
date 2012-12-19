@@ -33,7 +33,7 @@ a {
 }
 
 hr {
-  	margin: 20px 0;
+  	margin: 4px 0;
   	border: 0;
   	border-top: 1px solid #e0dfdf;
   	border-bottom: 1px solid #fefefe;
@@ -107,7 +107,7 @@ h6 {
 	text-align: center;
 	position: relative;
 	display: block;
-	margin: 12px 24px;
+	margin: 12px 10px;
 
 }
 
