@@ -22,7 +22,7 @@
 
 <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
-	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
 <!-- start: Favicon -->
@@ -32,52 +32,52 @@
 </head>
 
 <body>
-       <script type="text/javascript" language="javascript">
+<script type="text/javascript" language="javascript">
  
-    //加入收藏
+  //加入收藏
  
-        function AddFavorite(sURL, sTitle) {
+    function AddFavorite(sURL, sTitle) {
  
-            sURL = encodeURI(sURL); 
-        try{   
+      sURL = encodeURI(sURL); 
+    try{  
  
-            window.external.addFavorite(sURL, sTitle);   
+      window.external.addFavorite(sURL, sTitle);  
  
-        }catch(e) {   
+    }catch(e) {  
  
-            try{   
+      try{  
  
-                window.sidebar.addPanel(sTitle, sURL, "");   
+        window.sidebar.addPanel(sTitle, sURL, "");  
  
-            }catch (e) {   
+      }catch (e) {  
  
-                alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+        alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
  
-            }   
- 
-        }
+      }  
  
     }
  
-    //设为首页
+  }
  
-    function SetHome(url){
+  //设为首页
  
-        if (document.all) {
+  function SetHome(url){
  
-            document.body.style.behavior='url(#default#homepage)';
+    if (document.all) {
  
-               document.body.setHomePage(url);
+      document.body.style.behavior='url(#default#homepage)';
  
-        }else{
+        document.body.setHomePage(url);
  
-            alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+    }else{
  
-        }
+      alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
  
     }
  
-</script>
+  }
+ 
+</script> 
 
 <!-- start: Header -->
 <div class="navbar">
@@ -87,7 +87,7 @@
       <!-- start: Header Menu -->
       <div class="btn-group pull-right" > <a class="btn" href="http://iswhat.3owl.com/haoadmaster/shortcut.php"> <i class="icon-warning-sign"></i><span class="hidden-phone hidden-tablet"> 桌面快捷方式</span> </a> <a class="btn" onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)"> <i class="icon-tasks"></i><span class="hidden-phone hidden-tablet")" title="AdMaster内部导航站"> 加入收藏</span> </a> 
         <!-- start: User Dropdown --> 
-        <a class="btn"  onclick="SetHome(window.location)" href="javascript:void(0)"> <i class="icon-user"></i><span class="hidden-phone hidden-tablet"> 设置默认首页</span>
+        <a class="btn" onclick="SetHome(window.location)" href="javascript:void(0)"> <i class="icon-user"></i><span class="hidden-phone hidden-tablet"> 设置默认首页</span> 
         
         <!--<span class="caret"></span>--> 
         </a> 
@@ -113,11 +113,12 @@
     <div class="span2 main-menu-span">
       <div class="nav-collapse sidebar-nav">
         <ul class="nav nav-tabs nav-stacked main-menu">
-          <li class="nav-header hidden-tablet">站点分类</li>          <li><a href="index.html"><i class="icon-home"></i><span class="hidden-tablet"> 常用站点</span></a></li>
+          <li class="nav-header hidden-tablet">站点分类</li>
+          <li><a href="index.html"><i class="icon-home"></i><span class="hidden-tablet"> 常用站点</span></a></li>
           <li><a href="internal.html"><i class="icon-eye-open"></i><span class="hidden-tablet"> 内部站点</span></a></li>
           <li><a href="medium.html"><i class="icon-th"></i><span class="hidden-tablet"> 主要媒体</span></a></li>
           <li><a href="tools.html"><i class="icon-edit"></i><span class="hidden-tablet"> 实用工具</span></a></li>
-          <li><a href="others.html"><i class="icon-list-alt"></i><span class="hidden-tablet"> 其他站点</span></a></li>
+          <li><a href="others.html"><i class="icon-list-alt"></i><span class="hidden-tablet"> 生活娱乐</span></a></li>
           <li><a href="news.html"><i class="icon-font"></i><span class="hidden-tablet"> 消息通知</span></a></li>
           <li><a href="message.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 留言</span></a></li>
         </ul>
@@ -142,150 +143,88 @@
           <li> 其他站点 </li>
         </ul>
       </div>
-      
       <div class="row-fluid">
         <div class="sortable row-fluid">
           <div class="box-small span2"> <a data-rel="tooltip" title="新浪微博，不用解释" class="box-small-link" href="http://www.weibo.com/" target="_blank">
-          <div><img src="img/weibofavicon.ico" style="height:16px" alt="SiteMaster">&nbsp;新浪微博</div>
-          </a>
-          
+            <div><img src="img/weibofavicon.ico" style="height:16px" alt="SiteMaster">&nbsp;新浪微博</div>
+            </a> </div>
+          <div class="box-small span2"> <a data-rel="tooltip" title="腾讯微博，不用解释" class="box-small-link" href="http://t.qq.com/" target="_blank">
+            <div><img src="img/tqqfavicon.ico" style="height:16px" alt="SurveyMaster">&nbsp;腾讯微博</div>
+            </a> </div>
+          <div class="box-small span2"> <a data-rel="tooltip" title="原来的小资集中地，现在逐步被屌丝攻克" class="box-small-link" href="http://www.douban.com/" target="_blank">
+            <div><img src="img/doubanfavicon.ico" style="height:16px" alt="豆瓣">&nbsp;豆瓣</div>
+            </a> </div>
+          <div class="box-small span2"> <a data-rel="tooltip" title="开心网" class="box-small-link" href="http://www.kaixin001.com" target="_blank">
+            <div><img src="img/kaixin001favicon.ico" alt="人人网" style="height:16px">&nbsp;开心网</div>
+            </a></div>
+          <div class="box-small span2"> <a data-rel="tooltip" title="犯贱志-一个有内涵的网站" class="box-small-link" href="http://www.fanjian.net/" target="_blank">
+            <div><img src="img/fanjianfavicon.ico" style="height:16px" alt="犯贱志">&nbsp;犯贱志</div>
+            </a> </div>
         </div>
-        <div class="box-small span2"> <a data-rel="tooltip" title="腾讯微博，不用解释" class="box-small-link" href="http://t.qq.com/" target="_blank">
-          <div><img src="img/tqqfavicon.ico" style="height:16px" alt="SurveyMaster">&nbsp;腾讯微博</div>
-          </a>
-          
-        </div>
-        <div class="box-small span2"> <a data-rel="tooltip" title="原来的小资集中地，现在逐步被屌丝攻克" class="box-small-link" href="http://www.douban.com/" target="_blank">
-          <div><img src="img/doubanfavicon.ico" style="height:16px" alt="豆瓣">&nbsp;豆瓣</div>
-          </a>
-          
-        </div>
-          <div class="box-small span2"> <a data-rel="tooltip" title="苍天啊，难道我已经老了吗？我都不上人人了，^_^" class="box-small-link" href="http://www.renren.com/" target="_blank">
-            <div>人人网</div>
-            </a>
-            <span class="notification">RenRen</span>
-          </div>
-          <div class="box-small span2"> <a data-rel="tooltip" title="自由的百科：五毛、带路党和轮子的战场" class="box-small-link" href="http://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5" target="_blank">
-            <div><img src="img/wikipediafavicon.ico" style="height:16px" alt="维基百科">&nbsp;维基百科</div>
-            </a>
-            
-          </div>
-        </div>
+        <hr>
         <div class="sortable row-fluid">
-          <div class="box-small span2"> <a data-rel="tooltip" title="UCD大社区 - 以用户为中心的设计" class="box-small-link" href="http://ucdchina.com/" target="_blank">
-            <div>用户体验设计</div>
-            </a>
-            
-            <span class="notification">UCDChina</span> </div>
-          <div class="box-small span2"> <a data-rel="tooltip" title="广告门：一个行业的跌宕起伏 - 抄自该网站，网站中多是广告行业的新闻" class="box-small-link" href="http://www.adquan.com/" target="_blank">
-            <div><img src="img/adquanfavicon.ico" style="height:16px" alt="广告门">&nbsp;广告门</div>
-            </a>
-            
-          </div>
-          <div class="box-small span2"> <a data-rel="tooltip" title="公司的PLMM灰常多，这个专门奉上，男童鞋也要学习，知己知彼百战不殆~;-)" class="box-small-link" href="http://www.rayli.com.cn/" target="_blank">
-            <div><img src="img/raylifavicon.ico" style="height:16px" alt="瑞丽女性">&nbsp;瑞丽女性</div>
-            </a>
-            
-          </div>
           <div class="box-small span2"> <a data-rel="tooltip" title="酷狗的在线音乐" class="box-small-link" href="http://web.kugou.com/default.html" target="_blank">
-            <div><img src="img/kugoufavicon.ico" style="height:16px" alt="ChinaZ PPT素材下载">&nbsp;在线听歌</div>
-            </a>
-            
-          </div>
+            <div><img src="img/kugoufavicon.ico" style="height:16px" alt="在线听歌">&nbsp;在线听歌</div>
+            </a> </div>
           <div class="box-small span2"> <a data-rel="tooltip" title="百度音乐盒没啥好介绍的了，-__-" class="box-small-link" href="http://music.baidu.com/box?__o=/search#loaded" target="_blank">
             <div><img src="img/baidufavicon.ico" style="height:16px" alt="iciba">&nbsp;百度音乐盒</div>
-            </a>
-            
-          </div>
-          
+            </a> </div>
+          <div class="box-small span2"> <a data-rel="tooltip" title="爱奇艺影视" class="box-small-link" href="http://www.iqiyi.com/" target="_blank">
+            <div><img src="img/iqiyifavicon.ico" style="height:16px" alt="爱奇艺">&nbsp;爱奇艺</div>
+            </a> </div>
+          <div class="box-small span2"> <a data-rel="tooltip" title="电影、电视剧比较全，页面速度一般，播放速度快" class="box-small-link" href="http://www.eoeoo.com/" target="_blank">
+            <div><img src="img/eoeoofavicon.ico" style="height:16px" alt="易看电影">&nbsp;在线影视</div>
+            </a> </div>
+          <div class="box-small span2"> <a data-rel="tooltip" title="国内外优秀公开课程" class="box-small-link" href="http://open.163.com/" target="_blank">
+            <div><img src="img/163favicon.ico" style="height:16px" alt="SiteMaster">&nbsp;网易公开课</div>
+            </a> </div>
+          <div class="box-small span2"> <a data-rel="tooltip" title="各种比赛直播" class="box-small-link" href="http://www.zhibo8.cc/" target="_blank">
+            <div><img src="img/zhibo8favicon.ico" style="height:16px" alt="SurveyMaster">&nbsp;直播吧</div>
+            </a> </div>
+        </div>
+        <hr>
+        <div class="sortable row-fluid">
+          <div class="box-small span2"> <a data-rel="tooltip" title="嘛也不说了，天猫的质量好一点" class="box-small-link" href="http://s.click.taobao.com/t?e=zGU34CA7K%2BPkqB05%2Bm7rfGGjlY60oHcc7bkKOQtOoVocDMufQq6qACUN7Skzuv3%2F4IDKj5jy4%2BX7Ym%2BsYBUkyIEp4MWICCHZDTcJX5tA%2FELLTLn2mg%3D%3D" target="_blank">
+            <div> <img src="img/tmallfavicon.ico" alt="天猫" style="height:16px">&nbsp;淘宝天猫</div>
+            </a> </div>
+          <div class="box-small span2"> <a data-rel="tooltip" title="也没啥说的" class="box-small-link" href="http://r.59miao.com/?e=117220&s=1052" target="_blank">
+            <div><img src="img/360buyfavicon.ico" style="height:16px" alt="京东">&nbsp;京东</div>
+            </a> </div>
+          <div class="box-small span2"> <a data-rel="tooltip" title="团购大全" class="box-small-link" href="http://www.tuan800.com/" target="_blank">
+            <div><img src="img/tuan800favicon.ico" alt="团购" style="height:16px">&nbsp;团购</div>
+            </a> </div>
+          <div class="box-small span2"> <a data-rel="tooltip" title="购物返利网站，还在和卖家讲价就弱爆了（滥用一下职权(*^__^*) ）" class="box-small-link" href="http://www.uoouo.com/" target="_blank">
+            <div><img src="img/uoouofavicon.ico" style="height:16px" alt="返利网站"> &nbsp;返利</div>
+            </a> </div>
+          <div class="box-small span2"> <a data-rel="tooltip" title="比价购物" class="box-small-link" href="http://www.etao.com/" target="_blank">
+            <div><img src="img/etaofavicon.ico" style="height:16px" alt="一淘">&nbsp;比价</div>
+            </a> </div>
         </div>
       </div>
-      <div class="sortable row-fluid">
-        <div class="box-small span2"> <a data-rel="tooltip" title="爱奇艺影视" class="box-small-link" href="http://www.iqiyi.com/" target="_blank">
-          <div><img src="img/iqiyifavicon.ico" style="height:16px" alt="爱奇艺">&nbsp;爱奇艺</div>
-          </a>
-          
-        </div>
-        <div class="box-small span2"> <a data-rel="tooltip" title="电影、电视剧比较全，页面速度一般，播放速度快" class="box-small-link" href="http://www.eoeoo.com/" target="_blank">
-          <div><img src="img/eoeoofavicon.ico" style="height:16px" alt="易看电影">&nbsp;在线影视</div>
-          </a>
-          
-        </div>
-        <div class="box-small span2"> <a data-rel="tooltip" title="国内外优秀公开课程" class="box-small-link" href="http://open.163.com/" target="_blank">
-          <div><img src="img/163favicon.ico" style="height:16px" alt="SiteMaster">&nbsp;网易公开课</div>
-          </a>
-          
-        </div>
-        <div class="box-small span2"> <a data-rel="tooltip" title="各种比赛直播" class="box-small-link" href="http://www.zhibo8.cc/" target="_blank">
-          <div><img src="img/zhibo8favicon.ico" style="height:16px" alt="SurveyMaster">&nbsp;直播吧</div>
-          </a>
-          
-        </div>
-        <div class="box-small span2"> <a data-rel="tooltip" title="犯贱志-一个有内涵的网站" class="box-small-link" href="http://www.fanjian.net/" target="_blank">
-          <div><img src="img/fanjianfavicon.ico" style="height:16px" alt="犯贱志">&nbsp;犯贱志</div>
-          </a>
-          
-        </div>
-      </div>
-      <div class="sortable row-fluid">
-        <div class="box-small span2"> <a data-rel="tooltip" title="嘛也不说了，天猫的质量好一点" class="box-small-link" href="http://s.click.taobao.com/t?e=zGU34CA7K%2BPkqB05%2Bm7rfGGjlY60oHcc7bkKOQtOoVocDMufQq6qACUN7Skzuv3%2F4IDKj5jy4%2BX7Ym%2BsYBUkyIEp4MWICCHZDTcJX5tA%2FELLTLn2mg%3D%3D" target="_blank">
-          <div> <img src="img/tmallfavicon.ico" alt="天猫" style="height:16px">&nbsp;淘宝天猫</div>
-          </a>
-          
-        </div>
-        <div class="box-small span2"> <a data-rel="tooltip" title="也没啥说的" class="box-small-link" href="http://r.59miao.com/?e=117220&s=1052" target="_blank">
-          <div><img src="img/360buyfavicon.ico" style="height:16px" alt="京东">&nbsp;京东</div>
-          </a>
-          
-        </div>
-        <div class="box-small span2"> <a data-rel="tooltip" title="团购大全" class="box-small-link" href="http://www.tuan800.com/" target="_blank">
-          <div><img src="img/tuan800favicon.ico" alt="团购" style="height:16px">&nbsp;团购</div>
-          </a>
-          
-        </div>
-        <div class="box-small span2"> <a data-rel="tooltip" title="购物返利网站，还在和卖家讲价就弱爆了（滥用一下职权(*^__^*) ）" class="box-small-link" href="http://www.uoouo.com/" target="_blank">
-          <div><img src="img/uoouofavicon.ico" style="height:16px" alt="返利网站"> &nbsp;返利</div>
-          </a>
-          
-        </div>
-        <div class="box-small span2"> <a data-rel="tooltip" title="比价购物" class="box-small-link" href="http://www.etao.com/" target="_blank">
-          <div><img src="img/etaofavicon.ico" style="height:16px" alt="一淘">&nbsp;比价</div>
-          </a>
-          
-        </div>
-      </div>
-    </div>
-    
-    
-    
-    <div class="row-fluid"> 
+      <div class="row-fluid"> </div>
       
-
-      
+      <!-- end: Content --> 
     </div>
-    
-    <!-- end: Content --> 
+    <!--/#content.span10--> 
   </div>
-  <!--/#content.span10--> 
-</div>
-<!--/fluid-row-->
-
-<div class="modal hide fade" id="myModal">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal">×</button>
-    <h3>Settings</h3>
+  <!--/fluid-row-->
+  
+  <div class="modal hide fade" id="myModal">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">×</button>
+      <h3>Settings</h3>
+    </div>
+    <div class="modal-body">
+      <p>Here settings can be configured...</p>
+    </div>
+    <div class="modal-footer"> <a href="#" class="btn" data-dismiss="modal">Close</a> <a href="#" class="btn btn-primary">Save changes</a> </div>
   </div>
-  <div class="modal-body">
-    <p>Here settings can be configured...</p>
-  </div>
-  <div class="modal-footer"> <a href="#" class="btn" data-dismiss="modal">Close</a> <a href="#" class="btn btn-primary">Save changes</a> </div>
-</div>
-<div class="clearfix"></div>
-<hr>
-<footer>
-  <p class="pull-left">&copy; <a href="" target="_blank">AdMaster</a> 2012-12</p>
-  <p class="pull-right">Powered by: <a href="mailto:liguanghui@admaster.com.cn">AdMaster PM Team</a></p>
-</footer>
+  <div class="clearfix"></div>
+  <hr>
+  <footer>
+    <p class="pull-left">&copy; <a href="" target="_blank">AdMaster</a> 2012-12</p>
+    <p class="pull-right">Powered by: <a href="mailto:liguanghui@admaster.com.cn">AdMaster PM Team</a></p>
+  </footer>
 </div>
 <!--/.fluid-container--> 
 
@@ -386,22 +325,20 @@
 		
 	});			
 	</script> 
-<!-- end: JavaScript-->
+<!-- end: JavaScript--> 
 
 <script type="text/javascript">
-  var _smq = _smq || [];
-  _smq.push(['_setAccount', '4F3696AB', new Date()]);
-  _smq.push(['_setDirectoryIndex', 'index.html']);
-  _smq.push(['_setClickTimeOut', 200]);
-  _smq.push(['pageview']);
+ var _smq = _smq || [];
+ _smq.push(['_setAccount', '4F3696AB', new Date()]);
+ _smq.push(['_setDirectoryIndex', 'index.html']);
+ _smq.push(['_setClickTimeOut', 200]);
+ _smq.push(['pageview']);
 
-  (function() {
-  var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
-  sm.src = 'http://cdnmaster.com/sitemaster/sm.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
-  })();
+ (function() {
+ var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
+ sm.src = 'http://cdnmaster.com/sitemaster/sm.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
+ })();
 </script>
-
-
 </body>
 </html>
